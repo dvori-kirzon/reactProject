@@ -7,6 +7,7 @@ import adminDetailsStore from "../../store/adminDetails.js";
 import MeetingsList from "./MeetingsList.jsx";
 
 const Meeting = observer(() => {
+  debugger
   const [openAddMeeting, setOpenAddMeeting] = useState(false);
   const [date, setDate] = useState();
   const { isAdmin } = adminDetailsStore;
@@ -32,7 +33,7 @@ const Meeting = observer(() => {
         <MeetingsList />
       ) : (
         <>
-          <h1>בחר תאריך</h1>
+          {/* <h1>בחר תאריך</h1>
           {!openAddMeeting && <Date onAccsept={onChooseDate} />}
           {openAddMeeting && (
             <AddMeeting
@@ -41,7 +42,7 @@ const Meeting = observer(() => {
                 setOpenAddMeeting(false);
               }}
             />
-          )}
+          )} */}
         </>
       )}
     </>

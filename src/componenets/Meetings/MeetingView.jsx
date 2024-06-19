@@ -3,6 +3,7 @@ import meetingStore from "../../store/meetingStore.js";
 import React, { useEffect, useState } from "react";
 
 const MeetingView = observer(({ meetingId }) => {
+  debugger
   const { meetings } = meetingStore;
   const currrentMeet = meetings.find((meet) => meet.id === meetingId);
   const [color, setColor] = useState("green");
@@ -53,6 +54,8 @@ const MeetingView = observer(({ meetingId }) => {
         <>
           <p>{currrentMeet.clientName}</p>
           <p>{currrentMeet.clientPhone}</p>
+          <p>{currrentMeet.dateTime}</p>
+
         </>
       ) : (
         <p>לא נמצאה פגישה</p>
