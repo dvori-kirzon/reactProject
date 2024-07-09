@@ -10,8 +10,4 @@ const AdminPage = observer(() => {
 });
 export default AdminPage;
 
-// const AdminPage = () => {
-  
-//  return <h1>admin page</h1>
-// };
-// export default AdminPage;
+

@@ -1,4 +1,3 @@
-//import logo from "../logo/footer-logo.png.webp";
  import logo from "../logo/ref.jpg";
 
 export const defaultServices = [
