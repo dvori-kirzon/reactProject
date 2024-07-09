@@ -11,7 +11,7 @@ import AddIcon from '@mui/icons-material/Add';
 //serviselist:
 const ServicesList = observer(() => {
   const { isAdmin } = adminDetailsStore;
-  const { services } = ServiceStore;
+  const { services} = ServiceStore;
   const [openAddService, setOpenAddService] = useState(false);
 
   return (
@@ -20,15 +20,17 @@ const ServicesList = observer(() => {
         <AddServices close={setOpenAddService} />
       ) : (
         <>
-          {services.map((curerntServise) => {
+          {services.map((curerntServise) =>
+           {
             return (
               <div style={{margin:"1rem"}}>
                 <Service
                   service={curerntServise}
-                  key={curerntServise.id}
+                  // key={curerntServise.id}
                   isAdmin={isAdmin}
                 />
               </div>
+              
             );
           })}
           {isAdmin && (

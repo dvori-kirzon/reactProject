@@ -46,7 +46,7 @@ export const defaultMeetings = [
 export const defaultbBusiness = {
   name: "רפואה טבעית",
   address: "ר' עקיבא 10 מודיעין עילית",
-  phone: "03-6166666",
+  phone: "08-6166666",
   owner: "דבורה קירזון",
   logo: logo,
   description:

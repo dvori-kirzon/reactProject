@@ -24,7 +24,7 @@ const AddMeeting = observer(
 
     const onSubmit = async () => {
       const isAddMeetingSuccess = await meetingStore.addNewMeetings(meeting);
-      debugger
+  
       if (isAddMeetingSuccess) {
         alert("הפגישה נקבעה בהצלחה ");
         close();

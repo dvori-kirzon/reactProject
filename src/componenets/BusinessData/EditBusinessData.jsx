@@ -1,6 +1,7 @@
 import { observer } from "mobx-react";
 import { useState } from "react";
 import BusinessDataStore from "../../store/BusinessDataStore";
+import logo from "../../logo/ref.jpg";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -26,6 +27,7 @@ const EditBusinessData = observer(({ onClose }) => {
       phone: phone,
       owner: owner,
       description: description,
+      logo: logo
     };
     onClose();
     editBusinessData(newData);
@@ -76,3 +78,5 @@ const EditBusinessData = observer(({ onClose }) => {
 });
 
 export default EditBusinessData;
+
+

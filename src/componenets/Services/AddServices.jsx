@@ -7,12 +7,20 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
+
+
 const AddServices = observer(({ service, close }) => {
   const [name, setName] = useState(service?.name || "");
   const [price, setPrice] = useState(service?.price || "");
   const [desciption, setDesciption] = useState(service?.desciption || "");
 
-  const { addNewService, editService } = servicesStore;
+  // const a[service, setService] = useState({
+  //   id:"",
+  //   name: "",
+  //   desciption:""
+  // });
+
+  const { addNewService, editService } = servicesStore;0
 
   const onSubmit = () => {
     const newService = { name: name, price: price, desciption: desciption };
